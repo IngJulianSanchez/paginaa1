@@ -1,0 +1,117 @@
+
+/*********************************************************************************************
+	para cambiar el color de cualquier elemento por ejemplo body dependiendo de la resolucion
+**********************************************************************************************/
+/*@media screen and (min-width: 480px) {
+	body {
+		background-color: #000;
+	}
+}*/
+/******************************************************************************************
+	la siguiente linea de codigo representa qun breackpoint
+	consiste en que cuando la resolucion sea mayor a 480 cambie el tamaño de letra de h1
+*******************************************************************************************/
+/*
+@media screen and (min-width: 480px) {
+	h1 {
+		font-size: 2.5em;
+	}
+}
+*/
+
+
+/**********************************
+Configuracion para resolucion mayor de 480
+si quiero agrego otro breackpoint debajo de este para hacer otro tipo de diseño para resolucion que necesite.
+***********************************/
+
+@media screen and (min-width: 480px) {
+
+	/**********************************
+	PAGE: Portfolio
+	para este tipo de resolucion se tendran 3 imagenes por fila, se hace de la siguiente forma. 
+	***********************************/
+	#galleria li {
+		width: 28.3333333%
+	}
+	/*Este codigo lo organiza hacia la izquierda para limpiar los espacios en blanco*/
+	#galleria li::nth-child(4n) {
+		clear: left;
+	}
+	
+		/**********************************
+	PAGE: Contact
+	aqui se le esta diciendo al sw que quiero 2 columnas para cada una de las secciones 
+	***********************************/
+	#primary {
+		width: 50%;
+		float: left;
+	}
+	#secondary {
+		width: 40%;
+		float: right;
+	}
+	
+}
+
+/***************************************
+Configuracion para resolucion mayor a 660
+****************************************/
+@media screen and (min-width: 660px) {
+
+	/**********************************
+	HEADER 
+	***********************************/
+	nav {
+		background: none;
+		float: right;
+		margin-right: 5%;
+		text-align: right;
+		width: 45%;
+	}
+
+	#logo {
+		float: left;
+		margin-left: left;
+		width: 45%
+	}
+
+	h1 {
+		font-size: 2.5em;
+	}
+
+	h2 {
+		font-size: 0.825em;
+		margin-bottom: 20px;
+	}
+
+	header {
+		border-bottom: 5px solid #379797;
+		margin-bottom: 60px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
